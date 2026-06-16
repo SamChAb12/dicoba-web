@@ -7,35 +7,35 @@ import { siteConfig } from "@/data/site";
 const slides = [
   {
     label: "Impresión",
-    image: "/carousel/slide-1-impresion.jpeg",
+    image: "/images/carousel/slide-1-impresion.jpeg",
     title: "Soluciones de impresión para empresas y oficinas.",
     description:
       "Impresoras, consumibles, tóners y equipos de alto rendimiento para mantener la productividad de tu negocio.",
   },
   {
     label: "Cómputo",
-    image: "/carousel/slide-2-computo.jpeg",
+    image: "/images/carousel/slide-2-computo.jpeg",
     title: "Tecnología para impulsar tu productividad.",
     description:
       "Equipos de cómputo, monitores, periféricos y accesorios para empresas, oficinas y clientes particulares.",
   },
   {
     label: "Papelería",
-    image: "/carousel/slide-3-papeleria.jpeg",
+    image: "/images/carousel/slide-3-papeleria.jpeg",
     title: "Todo para tu oficina en un solo proveedor.",
     description:
       "Papelería, artículos escolares y suministros corporativos para mantener tu operación completa.",
   },
   {
     label: "Marcas",
-    image: "/carousel/slide-4-marcas.jpeg",
+    image: "/images/carousel/slide-4-marcas.jpeg",
     title: "Trabajamos con las mejores marcas.",
     description:
       "Calidad, garantía y respaldo para tu empresa con una amplia variedad de marcas reconocidas.",
   },
   {
     label: "Entrega",
-    image: "/carousel/slide-5-entrega.jpeg",
+    image: "/images/carousel/slide-5-entrega.jpeg",
     title: "Entrega y atención personalizada.",
     description:
       "Llevamos tus productos hasta donde los necesitas, con servicio confiable en Querétaro.",
@@ -103,6 +103,7 @@ export default function Hero() {
               alt={currentSlide.title}
               fill
               priority
+              sizes="(max-width: 768px) 100vw, 640px"
               className="object-cover transition-all duration-700"
             />
 
