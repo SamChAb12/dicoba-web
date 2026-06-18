@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const links = [
   { id: "inicio", label: "Inicio" },
   { id: "nosotros", label: "Nosotros" },
-  { id: "productos", label: "Productos" },
+  { id: "catalogo", label: "Catálogo" },
   { id: "marcas", label: "Marcas" },
   { id: "contacto", label: "Contacto" },
 ];
@@ -15,9 +15,7 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("inicio");
 
   useEffect(() => {
-    const sections = links.map((link) =>
-      document.getElementById(link.id)
-    );
+    const sections = links.map((link) => document.getElementById(link.id));
 
     const observer = new IntersectionObserver(
       (entries) => {
